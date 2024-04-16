@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <!-- navbar start-->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header start-->
+          <div class="nav-header">
+            <img src="./logo.svg" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- nav header end -->
+          <!-- links start-->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">services</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">tours</a>
+              </li>
+            </ul>
+          </div>
+          <!-- links end -->
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- banner start -->
+      <div class="banner">
+        <div class="container">
+          <h1>scroll project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+            neque sunt in? Id, necessitatibus quos quisquam distinctio
+            laudantium fugiat?
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+        </div>
+      </div>
+      <!-- banner end -->
+    </header>
+    <!-- about start-->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>us</span></h2>
+      </div>
+    </section>
+    <!-- about end -->
+    <!-- services start -->
+    <section id="services" class="section">
+      <div class="title">
+        <h2>our <span>services</span></h2>
+      </div>
+      <div class="section-center">
+        <article>
+          <h2 class="number" data-value="500">0</h2>
+          <p>Succeeded Projects</p>
+        </article>
+        <article>
+          <h2 class="number" data-value="17140">0</h2>
+          <p>Working Hours Spent</p>
+        </article>
+        <article>
+          <h2 class="number" data-value="1500">0</h2>
+          <p>Happy Clients</p>
+        </article>
+      </div>
+    </section>
+    <!-- services end -->
+    <!-- contact start -->
+    <section id="tours" class="section">
+      <div class="title">
+        <h2>featured <span>tours</span></h2>
+      </div>
+      <div class="section-center nature">
+        <img
+          src="./images/nature-1.jpg"
+          title="nature-1"
+          class="img"
+          data-id="1"
+          alt="nature-1"
+        />
+        <img
+          src="./images/nature-2.jpg"
+          title="nature-2"
+          class="img"
+          data-id="2"
+          alt="nature-2"
+        />
+        <img
+          src="./images/nature-3.jpg"
+          title="nature-3"
+          class="img"
+          data-id="3"
+          alt="nature-3"
+        />
+      </div>
+      <div class="section-center city">
+        <img
+          src="./images/city-1.jpg"
+          title="city-1"
+          class="img"
+          data-id="1"
+          alt="city-1"
+        />
+        <img
+          src="./images/city-2.jpg"
+          title="city-2"
+          class="img"
+          data-id="2"
+          alt="city-2"
+        />
+        <img
+          src="./images/city-3.jpg"
+          title="city-3"
+          class="img"
+          data-id="3"
+          alt="city-3"
+        />
+        <img
+          src="./images/city-4.jpg"
+          title="city-4"
+          class="img"
+          data-id="4"
+          alt="city-4"
+        />
+        <img
+          src="./images/city-5.jpg"
+          title="city-5"
+          class="img"
+          data-id="5"
+          alt="city-5"
+        />
+      </div>
+    </section>
+    <!-- contact end -->
+    <!-- modal start -->
+    <div class="modal">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="./images//city-1.jpg" class="main-img"/>
+            <h3 class="image-name">image name</h3>
+            <div class="modal-images">
+                <img
+                  src="./images/city-1.jpeg"
+                  title="city-1"
+                  id="1"
+                  class="modal-img"
+                  alt=""
+                />
+                <img
+                  src="./images/city-2.jpeg"
+                  title="city-2"
+                  id="2"
+                  class="modal-img selected"
+                  alt=""
+                />
+              </div>
+        </div>
+    </div>
+    <!-- modal end -->
+    <!-- footer start -->
+    <footer class="section">
+      <p>
+        copyright &copy; backroads travel tours company
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="show-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- footer end -->
+    <script src="app.js"></script>
+    <script src="numbers.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
