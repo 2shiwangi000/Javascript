@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Icon with Cursor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cursor Following Icon</h1>
+        <div class="controls">
+            <button id="sizeUp">Increase Size</button>
+            <button id="sizeDown">Decrease Size</button>
+            <button id="changeColor">Change Color</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="icon-options">
+            <div class="icon-option active" data-icon="fas fa-star">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="icon-option" data-icon="fas fa-heart">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="icon-option" data-icon="fas fa-bolt">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="icon-option" data-icon="fas fa-circle">
+                <i class="fas fa-circle"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cursor-icon">
+        <i class="fas fa-star"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
