@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
         cursorIcon.style.top = (e.pageY - 15) + 'px';
     })
 
+    //increase icon size
+    // sizeUpBtn.addEventListener('click',function(){
+    //     currentSize += 5;
+    //     cursorIcon.style.fontSize = currentSize + 'px';
+    //     cursorIcon.style.marginLeft = `-${currentSize/2}px`;
+    //     cursorIcon.style.marginTop = `-${currentSize/2}px`;
+    // })
+
     //change icon type
     iconOptions.forEach(option => {
         option.addEventListener('click', function () {
